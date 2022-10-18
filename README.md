@@ -26,12 +26,13 @@
 - **JUnit 5, AssertJ, REST-assured** - tests
 
 ## Build (could be skipped since jar file is committed)
-You should have a Maven installed in place
+You should have a Maven installed in place.
+
 After you should navigate to project folder and execute following command:
 ```bash
 mvn clean install
 ```
-As a result you will get a calendar-app-1.0-SNAPSHOT.jar file inside target folder
+As a result you will get a calendar-app-1.0-SNAPSHOT.jar file inside target folder.
 
 ## Run application
 ```bash
