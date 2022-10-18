@@ -24,3 +24,9 @@
 - **Jackson** - JSON serialization and deserialization
 - **HikariCP** - JDBC connection pool
 - **JUnit 5, AssertJ, REST-assured** - tests
+
+## Build
+
+```bash
+mvn clean install
+```
