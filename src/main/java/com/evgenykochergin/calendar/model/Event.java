@@ -11,8 +11,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import static com.evgenykochergin.calendar.model.type.EventStatus.ACCEPTED;
-import static com.evgenykochergin.calendar.model.type.EventStatus.DECLINED;
+import static com.evgenykochergin.calendar.model.type.EventStatus.*;
 import static com.evgenykochergin.calendar.model.type.EventType.RECURRING;
 import static com.evgenykochergin.calendar.model.type.EventType.SINGLE;
 import static java.util.Collections.emptyList;
@@ -143,7 +142,7 @@ public class Event {
         private UUID id = randomUUID();
         private UUID userId;
         private UUID eventDetailsId;
-        private EventStatus status;
+        private EventStatus status = PENDING;
         private LocalDateTime startDate;
         private LocalDateTime endDate;
         private Duration duration;
@@ -196,6 +195,10 @@ public class Event {
         public Builder recurrence(Optional<Recurrence> recurrence) {
             this.recurrence = recurrence;
             return this;
+        }
+
+        public Builder recurrence(Recurrence recurrence) {
+            return recurrence(Optional.of(recurrence));
         }
 
         public Event build() {

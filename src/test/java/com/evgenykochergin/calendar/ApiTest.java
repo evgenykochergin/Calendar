@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
 import java.util.TreeSet;
 
 import static com.evgenykochergin.calendar.json.Json.arrayNode;
@@ -251,7 +250,7 @@ public class ApiTest extends FunctionalTest {
                         .duration(ofMinutes(30))
                         .attendeeIds(new TreeSet<>(List.of(attendee.id)))
                         .visibility(PUBLIC)
-                        .recurrence(Optional.of(new Recurrence(DAILY, date("2022-11-17T10:00"))))
+                        .recurrence(new Recurrence(DAILY, date("2022-11-17T10:00")))
                         .build());
         // when
         final var response = given()
@@ -395,7 +394,7 @@ public class ApiTest extends FunctionalTest {
                         .duration(ofMinutes(120))
                         .attendeeIds(new TreeSet<>(List.of(user1.id)))
                         .visibility(PUBLIC)
-                        .recurrence(Optional.of(new Recurrence(DAILY, date("2022-11-17T10:00"))))
+                        .recurrence(new Recurrence(DAILY, date("2022-11-17T10:00")))
                         .build());
         final var requestBody = objectNode()
                 .<ObjectNode>set("userIds", arrayNode().add(user1.id.toString()).add(user2.id.toString()))
@@ -446,7 +445,7 @@ public class ApiTest extends FunctionalTest {
                         .duration(ofMinutes(120))
                         .attendeeIds(new TreeSet<>(List.of(user1.id)))
                         .visibility(PUBLIC)
-                        .recurrence(Optional.of(new Recurrence(DAILY, date("2022-11-17T10:00"))))
+                        .recurrence(new Recurrence(DAILY, date("2022-11-17T10:00")))
                         .build());
         final var requestBody = objectNode()
                 .<ObjectNode>set("userIds", arrayNode().add(user1.id.toString()).add(user2.id.toString()))

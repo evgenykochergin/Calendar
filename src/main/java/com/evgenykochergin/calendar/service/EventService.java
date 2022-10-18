@@ -110,9 +110,17 @@ public class EventService {
                 return this;
             }
 
+            public Builder description(String description) {
+                return description(Optional.of(description));
+            }
+
             public Builder recurrence(Optional<Recurrence> recurrence) {
                 this.recurrence = recurrence;
                 return this;
+            }
+
+            public Builder recurrence(Recurrence recurrence) {
+                return recurrence(Optional.of(recurrence));
             }
 
             public CreateEventParams build() {

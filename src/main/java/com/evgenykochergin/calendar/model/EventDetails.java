@@ -73,6 +73,10 @@ public class EventDetails {
             return this;
         }
 
+        public Builder description(String description) {
+            return description(Optional.of(description));
+        }
+
         public EventDetails build() {
             return new EventDetails(this);
         }
