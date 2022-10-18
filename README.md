@@ -23,5 +23,4 @@
 - **Flyway** - an database migration tool
 - **Jackson** - JSON serialization and deserialization
 - **HikariCP** - JDBC connection pool
-- **JUnit 5, AssertJ** - tests
-- **REST-assured** - testing and validation of REST services
+- **JUnit 5, AssertJ, REST-assured** - tests
