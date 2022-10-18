@@ -20,7 +20,7 @@
 - **Javalin** - a very lightweight web framework
 - **Jooq** - for working with RDBMs, it generates Java code from your database and lets you build type safe SQL queries through its fluent API
 - **H2** - an in-memory RDBMs, can be replaced with any other RDBMS, e.g. postges or mysql
-- **Flyway** - an database migration tool
+- **Flyway** - a database migration tool
 - **Jackson** - JSON serialization and deserialization
 - **HikariCP** - JDBC connection pool
 - **JUnit 5, AssertJ, REST-assured** - tests
