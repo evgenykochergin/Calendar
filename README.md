@@ -25,7 +25,7 @@
 - **HikariCP** - JDBC connection pool
 - **JUnit 5, AssertJ, REST-assured** - tests
 
-## Build (could be skipped since jar file is committed)
+## Build (optional, could be skipped since jar file is committed)
 You should have a Maven installed in place.
 
 After you should navigate to project folder and execute following command:
