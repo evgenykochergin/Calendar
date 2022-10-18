@@ -38,4 +38,6 @@ As a result you will get a calendar-app-1.0-SNAPSHOT.jar file inside target fold
 ```bash
 java -jar target/calendar-app-1.0-SNAPSHOT.jar 
 ```
-
+## API
+API document was prepared via Postman
+https://documenter.getpostman.com/view/677406/2s847HNs9H
